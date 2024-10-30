@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Проверка версии Ubuntu
-UBUNTU_VERSION=$(lsb_release -rs)
-if [[ "$UBUNTU_VERSION" < "22.04" ]]; then
-  echo "Эта установка требует Ubuntu версии 22.04 или выше. This installation requires Ubuntu version 22.04 or higher."
-  exit 1
-fi
+#UBUNTU_VERSION=$(lsb_release -rs)
+#if [[ "$UBUNTU_VERSION" < "22.04" ]]; then
+  #echo "Эта установка требует Ubuntu версии 22.04 или выше. This installation requires Ubuntu version 22.04 or higher."
+  #exit 1
+#fi
 
 # Обновление системы
 echo "Обновление системы..."
