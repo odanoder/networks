@@ -3,7 +3,7 @@
 # Проверка версии Ubuntu
 UBUNTU_VERSION=$(lsb_release -rs)
 if [[ "$UBUNTU_VERSION" < "22.04" ]]; then
-  echo "Эта установка требует Ubuntu версии 22.04 или выше."
+  echo "Эта установка требует Ubuntu версии 22.04 или выше. This installation requires Ubuntu version 22.04 or higher."
   exit 1
 fi
 
@@ -12,8 +12,8 @@ echo "Обновление системы..."
 sudo apt update && sudo apt upgrade -y
 
 # Запрос email и пароля
-read -p "Введите ваш email, указанный при регистрации: " EMAIL
-read -sp "Введите ваш пароль: " PASSWORD
+read -p "Введите ваш email, указанный при регистрации. Enter your email specified during registration: " EMAIL
+read -sp "Введите ваш пароль. Enter your password: " PASSWORD
 echo
 
 # Скачивание и установка последней версии
