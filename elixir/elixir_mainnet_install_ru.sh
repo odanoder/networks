@@ -53,7 +53,7 @@ echo -e "\033[32mФайл docker-compose.yml успешно создан.\033[0m
 
 # Запуск валидатора
 echo -e "\033[32mЗапускаем валидатор...\033[0m"
-docker-compose up -d
+docker compose up -d
 
 # Ожидание и проверка успешного запуска
 sleep 5
@@ -67,8 +67,8 @@ fi
 # Инструкции для пользователя
 echo -e "\n\033[33m--- Команды для управления валидатором Elixir ---\033[0m"
 echo -e "\033[34mДля проверки логов контейнера:\033[0m \033[36mdocker logs -f elixir\033[0m"
-echo -e "\033[34mДля перезапуска валидатора:\033[0m \033[36mdocker-compose restart elixir\033[0m"
-echo -e "\033[34mДля остановки валидатора:\033[0m \033[36mdocker-compose down\033[0m"
+echo -e "\033[34mДля перезапуска валидатора:\033[0m \033[36mdocker compose restart elixir\033[0m"
+echo -e "\033[34mДля остановки валидатора:\033[0m \033[36mdocker compose down\033[0m"
 echo -e "\033[34mДля просмотра состояния валидатора на сайте (обновление каждые 10 минут):\033[0m"
 echo -e "https://www.elixir.xyz/validators/search/${STRATEGY_EXECUTOR_BENEFICIARY}"
 echo -e "\033[32mУстановка завершена. Теперь ваш валидатор Elixir работает!\033[0m"
