@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILE_PATH="/healthcheck_hyperspace"
+FILE_PATH="/healthcheck_hyperspace.sh"
 
 SCRIPT_CONTENT='#!/bin/bash
 
