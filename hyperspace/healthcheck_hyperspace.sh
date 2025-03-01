@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# Путь к файлу, который будет создан
-FILE_PATH="/healthcheck_hyperspace.sh"
+FILE_PATH="$HOME/healthcheck_hyperspace.sh"
 
-# Код, который будет помещен в файл (используем двойные кавычки и экранируем специальные символы)
 SCRIPT_CONTENT="#!/bin/bash
 
 # Проверяем, существует ли сессия tmux с именем \"hyperspace\"
