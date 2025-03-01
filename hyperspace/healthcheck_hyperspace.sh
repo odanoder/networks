@@ -1,10 +1,8 @@
 #!/bin/bash
 
 FILE_PATH="$HOME/healthcheck_hyperspace.sh"
-
 SCRIPT_CONTENT="#!/bin/bash
 
-# Проверяем, существует ли сессия tmux с именем \"hyperspace\"
 if tmux has-session -t hyperspace 2>/dev/null; then
     echo \"Сессия hyperspace уже запущена. Завершение работы скрипта.\"
     exit 0
