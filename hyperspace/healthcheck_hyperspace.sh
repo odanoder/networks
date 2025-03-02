@@ -16,14 +16,14 @@ fi
 "
 
 # Создаем файл в корневой директории и записываем в него содержимое
-echo "$SCRIPT_CONTENT" | sudo tee $FILE_PATH > /dev/null
+echo "$SCRIPT_CONTENT" | tee $FILE_PATH > /dev/null
 
 # Проверяем, успешно ли создан файл
 if [ -f "$FILE_PATH" ]; then
     echo "Файл '$FILE_PATH' успешно создан."
 
     # Даем файлу права на выполнение
-    sudo chmod +x $FILE_PATH
+    chmod +x $FILE_PATH
 
     # Проверяем, успешно ли установлены права на выполнение
     if [ -x "$FILE_PATH" ]; then
